@@ -1,0 +1,13 @@
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.tex.bak
+*.bib.bak
+*.cls.bak
+*.vtc
