@@ -15,11 +15,9 @@
 \usepackage{framed}
 \usepackage{tocloft}
 \usepackage{array}
-\usepackage{hyperref}
 \usepackage[none]{hyphenat}
-\usepackage[sorting = ydnt, maxbibnames=9]{biblatex}
-\nocite{*}
-{\def\section*#1{}\bibliography{publicationsbib}}
+
+
 %-----------------------------------------------------------
 %Edit these values as you see fit
 
@@ -66,9 +64,9 @@
 \begin{document}
 
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-\textbf{\Large Elena Di Lavore} & \textbf{\today} \\
+\textbf{\Large Elena Di Lavore} & \textbf{August 15, 2019} \\
 Born in Milano, Italy, 13/08/1995 & elenatalita@gmail.com \\
-Address: Akadeemia tee 21-1, Tallinn 12611, Estonia & +393665334335 \\
+Address: Piazza 6 febbraio, 10 Milano Italy & +393665334335 \\
 \end{tabular*}
 \\
 
@@ -77,18 +75,6 @@ Address: Akadeemia tee 21-1, Tallinn 12611, Estonia & +393665334335 \\
 \resheading{Education}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
-
-\item[] \ressubheading{Tallinn University of Technology}{Estonia}{PhD}{2019 - present}
-
-\begin{itemize}
-	\resitem{Thesis topic: Monoidal width \\
-	Supervisor: Professor Pawe{\l} Soboci{\'n}ski}
-	\resitem{Courses:\\\begin{tabular}{p{0.4 \textwidth}@{\hskip2em}  p{0.4 \textwidth}}
-						 Functional programming & Machine learning \\
-						 Philosophy of science & Academic writing
-						 \end{tabular}}
-
-\end{itemize}
 
 \item[] \ressubheading{University of Oxford}{United Kingdom}{MSc in Mathematics and Foundations of Computer Science}{2018 - 2019}
 
@@ -115,7 +101,7 @@ Address: Akadeemia tee 21-1, Tallinn 12611, Estonia & +393665334335 \\
 	Experimental laboratory of computational mathematics & Physics 3 \\
 	Geometry 2 & Algebra 1 \\
 	Mathematical logic & Game theory
-	
+
 	\end{tabular}}
 \end{itemize}
 
@@ -139,48 +125,42 @@ Address: Akadeemia tee 21-1, Tallinn 12611, Estonia & +393665334335 \\
 	Algebraic structures 1
 	\end{tabular}	 }
 \end{itemize}
+
 \end{itemize}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Publications and preprints}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\printbibliography[heading=none]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Academic commitments}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-  \item (2022) Program commitee member of the Applied Category Theory conference.
-  \item (2022-2023) Organiser of the Applied Category Theory Adjoint School.
-  \item Reviewer for conferences (LiCS, MFPS) and journals (TAC, RAIRO).
-\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Other skills}
+\resheading{Interests and other skills}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{itemize}
-  \item[] \textbf{Language skills}
+ \item[] \textbf{Academic interests}
+ \begin{itemize}
+  \item Applied category theory, Compositional game theory
+  \item Attended the conferences SYCO2 (Glasgow, December 2018), SYCO3 (Oxford, March 2019)
+ \end{itemize}
+ \item[] \textbf{Language skills}
+ \begin{itemize}
+  \item Italian: mother tongue
+  \item English: C1
+ \end{itemize}
+ \item[] \textbf{Programming languages}
 	\begin{itemize}
-	  \item Italian: mother tongue
-	  \item English: C1
-	\end{itemize}
-  \item[] \textbf{Programming languages}
-	\begin{itemize}
-	  \item Idris, Matlab
 	  \item C, Java: basic knowledge
-	  \item R, SQL: basic knowledge
-	\end{itemize}
+	  \item MATLAB, R, SQL: basic knowledge
+ \end{itemize}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Grants}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-2pt}
-\begin{center}\begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
-				\multicolumn{2}{c}{Best Freshers Award (Politecnico di Milano) \cftdotfill{\cftdotsep} 2015}\\
-				\multicolumn{2}{c}{Exemptions for High Academic Performance (Politecnico di Milano) \cftdotfill{\cftdotsep} 2015-2017}\\
-				\vphantom{E}
-			  \end{tabular*}
-			\end{center}\vspace*{-16pt}
+	\vspace{-2pt}
+	\begin{center}\begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
+		\multicolumn{2}{c}{Best Freshers Award (Politecnico di Milano) \cftdotfill{\cftdotsep} 2015}\\
+        \multicolumn{2}{c}{Exemptions for High Academic Performance (Politecnico di Milano) \cftdotfill{\cftdotsep} 2015-2017}\\
+		\vphantom{E}
+\end{tabular*}
+\end{center}\vspace*{-16pt}
 
 
 \end{document}

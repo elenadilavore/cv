@@ -1,10 +1,10 @@
 (TeX-add-style-hook
- "CVElenaDiLavore"
+ "cvOld"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("article" "letterpaper" "11pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("xcolor" "svgnames") ("hyphenat" "none") ("biblatex" "sorting=ydnt" "maxbibnames=9")))
+                     '(("xcolor" "svgnames") ("hyphenat" "none")))
    (TeX-run-style-hooks
     "latex2e"
     "article"
@@ -13,20 +13,12 @@
     "framed"
     "tocloft"
     "array"
-    "hyperref"
-    "hyphenat"
-    "biblatex")
+    "hyphenat")
    (TeX-add-symbols
     '("ressubheading" 4)
     '("resheading" 1)
-    '("resitem" 1)
-    "section")
-   (LaTeX-add-bibliographies
-    "publicationsbib")
+    '("resitem" 1))
    (LaTeX-add-lengths
-    "outerbordwidth")
-   (LaTeX-add-xcolor-definecolors
-    "shadecolor"
-    "shadecolorB"))
+    "outerbordwidth"))
  :latex)
 
