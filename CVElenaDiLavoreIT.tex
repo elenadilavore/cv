@@ -1,0 +1,201 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+%
+% (c) 2012 Scott Clark <sc932@cornell.edu> cam.cornell.edu/~sc932
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage[none]{hyphenat}
+\definecolor{bordeaux}{HTML}{4b1121}
+\hypersetup{colorlinks=true, linkcolor=bordeaux, citecolor=bordeaux, urlcolor=bordeaux}
+\usepackage[sorting = ydnt, maxbibnames=9]{biblatex}
+\nocite{*}
+{\def\section*#1{}\bibliography{publicationsbib}}
+%-----------------------------------------------------------
+%Edit these values as you see fit
+\usepackage[italian]{babel}
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Elena Di Lavore} & \textbf{\today} \\
+Nata a Milano, Italia, 13/08/1995 & elena.dilavore@di.unipi.it \\
+Indirizzo: Largo Bruno Pontecorvo 3, Pisa, Italia & pagina web: \href{https://elenadilavore.github.io/}{https://elenadilavore.github.io/} \\
+\end{tabular*}
+\\
+\ \\
+\ \\
+Assegnista al dipartimento di Informatica all'Università di Pisa.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Riconoscimenti}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-2pt}
+\begin{center}
+  \begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
+	\multicolumn{2}{c}{Grant europea (EuroProofNet) per una Short Term Scientific Mission\cftdotfill{\cftdotsep} 2024}\\
+	\multicolumn{2}{c}{Kleene Award per il migliore articolo di soli studenti~\cite{2022monoidalstreams}, ACM/IEEE LiCS\cftdotfill{\cftdotsep} 2022}\\
+	\multicolumn{2}{c}{Esonero per merito (Politecnico di Milano) \cftdotfill{\cftdotsep} 2016--2017}\\
+	\multicolumn{2}{c}{Esonero per merito (Politecnico di Milano) \cftdotfill{\cftdotsep} 2015--2016}\\
+	\multicolumn{2}{c}{Premio per le migliori matricole (Politecnico di Milano) \cftdotfill{\cftdotsep} 2015}\\
+	\vphantom{E}
+  \end{tabular*}
+\end{center}\vspace*{-16pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Istruzione}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item[] \ressubheading{Tallinna Tehnika{\"u}likool}{Estonia}{Dottorato in Informatica}{2019 - 2023}
+
+\begin{itemize}
+	\resitem{Titolo della tesi: Monoidal Width \\
+		Relatore: Professor Pawe{\l} Soboci{\'n}ski\\
+		Controrelatori: Professor Samson Abramski e professor Dan Marsden}
+
+\end{itemize}
+
+\item[] \ressubheading{University of Oxford}{Inghilterra}{MSc in Mathematics and Foundations of Computer Science}{2018 - 2019}
+
+\begin{itemize}
+	\resitem{Titolo della tesi: Subgame Perfection in Compositional Game Theory \\
+	Relatori: Dr Jules Hedges, professor Jamie Vicary}
+	\resitem{Voto: merit}
+\end{itemize}
+
+\item[] \ressubheading{Universit\`a di Pisa}{Italia}{Laurea Triennale in Matematica}{2017 - 2018}
+
+\begin{itemize}
+	\resitem{Titolo della tesi: Data-driven Estimation for Nash Equilibria \\
+	Relatore: Professor Giancarlo Bigi}
+	\resitem{Voto: 110 e lode laude}
+\end{itemize}
+
+\item[] \ressubheading{Politecnico di Milano}{Italia}{Laurea Triennale in Ingegneria Matematica}{2014 - 2017}
+
+\begin{itemize}
+	\resitem{Titolo della tesi: Floquet Theory Applied to a Perturbed Wave Equation \\
+	Relatore: Professor Gianni Arioli}
+	\resitem{Voto: 110 cum laude / 110}
+	\resitem{Studi all'estero: programma Erasmus a Linnaeus University, V\"axj\"o, Svezia}
+\end{itemize}
+\end{itemize}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Incarichi accademici}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+  \item (da dicembre 2023) Membro dello steering committee della Adjoint School.
+  \item (da maggio 2023) Membro dell'executive board del giornale Compositionality.
+  \item (settembre 2022) Organizzatore locale del nono Symposium on Compositional Structures.
+  \item (maggio 2022) Membro del program committee della conferenza Applied Category Theory.
+  \item (2021-2023) Organizzatore della Adjoint School.
+  \item Reviewer per conferenze (LiCS, MFPS, ...) e giornali (TAC, RAIRO, MSCS, ...).
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Insegnamento}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+  \item (secondo semestre 2023) Docente per il corso Introduction to Category Theory.
+  \item (secondo semestre 2022) Esercitatrice per il corso Introduction to Category Theory.
+  \item (secondo semestre 2021) Esercitatrice per il corso Introduction to Category Theory.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Scuole di dottorato}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+  \item (2019-2020) Studentessa della Adjoint School sotto la supervisione di Valeria de Paiva.
+  \item (marzo 2020) Studentessa alla Estonian Winter School in Computer Science.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Presentazioni accademiche}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+  \item (08/03/2024) Oxford Advanced Seminar on Informatic Structures, University of Oxford, UK.
+  \item (08/01/2024) Directions and Perspectives in the \(\lambda\)-calculus, Università di Bologna, Italia.
+  \item (22/11/2023) 34th Nordic Workshop on Programming Theory, Mälardalens universitet, Svezia.
+  \item (01/08/2023) Conferenza Applied Category Theory, University of Maryland, USA.
+  \item (18/07/2023) Coresources workshop, University of Cambridge, UK.
+  \item (27/06/2023) Conferenza Logic in Computer Science (LiCS), Boston University, USA.
+  \item (25/06/2023) International Workshop on Quantitative Logical methods, Boston University, USA.
+  \item (14/06/2023) Categories Networking Project opening workshop, University of Edinburgh, UK.
+  \item (26/04/2023) Italian Category Theory Fest 2023, online.
+  \item (01/08/2022) Women in Logic workshop, Technion, Israele.
+  \item (22/07/2022) Conferenza Applied Category Theory, University of Strathclyde, UK.
+  \item (26/06/2022) 29th Foundational Methods in Computer Science, University of Calgary, Canada.
+  \item (25/05/2022) Comonads Meetup, University of Cambridge, UK.
+  \item (24/05/2022) Mathematical Foundations Seminar, University of Bath, UK.
+  \item (13/12/2021) Symposium on Compositional Structures 8, Tallinna Tehnika{\"u}likool, Estonia.
+  \item (26/01/2021) Conferenza Computer Science Logic 2021, Univerza v Ljubljani, Slovenia.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Altro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+  \item[] \textbf{Lingue:} italiano (lingua madre), inglese (C1).
+  \item[] \textbf{Linguaggi di programmazione:} conoscenze di base di Idris, Matlab, C, R.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Pubblicazioni scientifiche}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography[heading=none]
+% \textbf{Note.} As customary in mathematics, all my publications list the authors in alphabetical order.
+
+\end{document}
