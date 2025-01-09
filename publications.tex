@@ -19,12 +19,12 @@
 \usepackage[none]{hyphenat}
 \definecolor{bordeaux}{HTML}{4b1121}
 \hypersetup{colorlinks=true, linkcolor=bordeaux, citecolor=bordeaux, urlcolor=bordeaux}
-\usepackage[sorting = ydnt, maxbibnames=9]{biblatex}
-\nocite{*}
+\usepackage[style=alphabetic, sorting = ydnt, maxbibnames=9]{biblatex}
+%\nocite{*}
 {\def\section*#1{}\bibliography{publicationsbib}}
 %-----------------------------------------------------------
 %Edit these values as you see fit
-\usepackage[italian]{babel}
+\usepackage[english]{babel}
 \setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
 \definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
 \definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
@@ -69,16 +69,16 @@
 
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 \textbf{\Large Elena Di Lavore} & \textbf{\today} \\
-Nata a Milano, Italia, 13/08/1995 & elena.dilavore@di.unipi.it \\
-Indirizzo: Largo Bruno Pontecorvo 3, Pisa, Italia & pagina web: \href{https://elenadilavore.github.io/}{https://elenadilavore.github.io/} \\
+elenatalita@gmail.com & personal webpage: \href{https://elenadilavore.github.io/}{https://elenadilavore.github.io/} \\
 \end{tabular*}
 \\
 \ \\
 \ \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Pubblicazioni Scientifiche}
+\resheading{Selected publications}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\printbibliography[heading=none]
+
+\printbibliography[heading={none},keyword={pub},keyword={sel}]
 % \textbf{Note.} As customary in mathematics, all my publications list the authors in alphabetical order.
 
 \end{document}
